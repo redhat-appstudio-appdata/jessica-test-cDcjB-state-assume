@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ikup
+  namespace: jforrest-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:100b6c9ecdaf5715085a80314608d1381e3f02f56f819655d0b152629f722a35
+        name: my-nodejs
+        resources: {}
+status: {}
